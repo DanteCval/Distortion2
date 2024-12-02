@@ -3,76 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de | Distortion</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Acerca de - Distortion</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para la página "Acerca de" */
+        .about-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .about-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-family: var(--heading-font);
+        }
+
+        .about-header p {
+            font-size: 1rem;
+            color: var(--text-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-sections {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .about-card {
+            flex: 1 1 calc(33.333% - 2rem);
+            background-color: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .about-card h3 {
+            color: var(--secondary-color);
+            font-family: var(--heading-font);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-card p {
+            font-family: var(--body-font);
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .about-footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 8px;
+        }
+
+        .about-footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-sections {
+                flex-direction: column;
+            }
+
+            .about-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header fijo -->
     <header class="sticky-header">
         <nav>
-            <a href="index.html" class="logo">Distortion</a>
+            <a href="#" class="logo">Distortion</a>
             <ul class="nav-links">
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="about" class="active">Acerca de</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección de introducción -->
-    <section class="about-header">
-        <div class="about-intro">
-            <h1>Acerca de Distortion</h1>
-            <p>Explora el arte, la pasión y la innovación detrás de los instrumentos que dan forma al mundo de la música eléctrica.</p>
-        </div>
-    </section>
-
-    <!-- Contenido principal -->
     <main>
-        <section class="about-content">
-            <div class="about-description">
-                <h2>Nuestra Visión</h2>
-                <p>En <strong>Distortion</strong>, creemos que cada instrumento cuenta una historia única. Nuestra misión es conectar a músicos de todo el mundo con las herramientas que necesitan para expresar su creatividad y pasión por la música.</p>
+        <section class="about-container">
+            <div class="about-header">
+                <h1>Acerca de Distortion</h1>
+                <p>Distortion es tu fuente confiable de información sobre guitarras y bajos eléctricos. Exploramos marcas, modelos y estilos para inspirar tu pasión musical.</p>
             </div>
-            <div class="about-values">
-                <h2>Lo que Representamos</h2>
-                <ul>
-                    <li><strong>Pasión:</strong> Nos impulsa el amor por la música.</li>
-                    <li><strong>Calidad:</strong> Presentamos solo marcas reconocidas por su excelencia.</li>
-                    <li><strong>Inspiración:</strong> Queremos inspirarte a crear y explorar nuevos sonidos.</li>
-                </ul>
+
+            <div class="about-sections">
+                <div class="about-card">
+                    <img src="guitar.jpg" alt="Guitarras eléctricas" class="about-image">
+                    <h3>Nuestra Misión</h3>
+                    <p>Brindar a los músicos una plataforma informativa y apasionada para explorar instrumentos de calidad y descubrir su próximo sonido.</p>
+                </div>
+                <div class="about-card">
+                    <img src="history.jpg" alt="Historia" class="about-image">
+                    <h3>Nuestra Historia</h3>
+                    <p>Concebido por músicos para músicos, Distortion nació de la necesidad de un catálogo integral que combine información precisa y diseño elegante.</p>
+                </div>
+                <div class="about-card">
+                    <img src="team.jpg" alt="Nuestro equipo" class="about-image">
+                    <h3>El Equipo</h3>
+                    <p>Somos un grupo de entusiastas de la música dedicados a investigar, recopilar y presentar los mejores instrumentos para artistas como tú.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Sección de equipo -->
-        <section class="about-team">
-            <h2>Conoce al Equipo</h2>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="team1.jpg" alt="Miembro del equipo 1">
-                    <h3>María López</h3>
-                    <p>Fundadora y amante de las guitarras eléctricas.</p>
-                </div>
-                <div class="team-member">
-                    <img src="team2.jpg" alt="Miembro del equipo 2">
-                    <h3>Juan Pérez</h3>
-                    <p>Especialista en bajos y productor musical.</p>
-                </div>
-                <div class="team-member">
-                    <img src="team3.jpg" alt="Miembro del equipo 3">
-                    <h3>Carmen García</h3>
-                    <p>Diseñadora y apasionada del marketing musical.</p>
-                </div>
-            </div>
+        <section class="about-footer">
+            <p>Gracias por explorar Distortion. ¡Déjanos inspirar tu próxima gran creación musical!</p>
         </section>
     </main>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Distortion. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:info@distortion.com">info@distortion.com</a></p>
+        <p>&copy; 2024 Distortion - Todos los derechos reservados.</p>
     </footer>
 </body>
-    <script src="script.js"></script>
-
 </html>
+
