@@ -12,18 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Datos de ejemplo para las guitarras
     const guitars = [
-        { id: 1, name: "ESP Eclipse", brand: "ESP", strings: "6", type: "Standard", image: "imgs/esp_eclipse.png" },
-        { id: 2, name: "Jackson Soloist", brand: "Jackson", strings: "7", type: "Standard", image: "imgs/jackson_soloist.jpg" },
-        { id: 3, name: "Fender Stratocaster", brand: "Fender", strings: "6", type: "Standard", image: "imgs/fender_strato.jpg" },
-        { id: 4, name: "Gibson Les Paul", brand: "Gibson", strings: "6", type: "Standard", image: "imgs/gibson_lespaul_studio.png" },
-        { id: 5, name: "ESP KH-2", brand: "ESP", strings: "6", type: "Signature", image: "imgs/esp_kh2.png" },
-        { id: 6, name: "Jackson Randy Rhoads X", brand: "Jackson", strings: "6", type: "Signature", image: "imgs/jackson_rr_x.jpg" },
-        { id: 7, name: "Fender Jim Root", brand: "Fender", strings: "6", type: "Signature", image: "imgs/fender_jim_root.jpg" },
-        { id: 8, name: "Gibson Tony Iommi SG", brand: "Gibson", strings: "6", type: "Signature", image: "imgs/gibson_tony_iommi_sg.jpg" },
-        { id: 9, name: "ESP 8-String", brand: "ESP", strings: "8", type: "Standard", image: "imgs/esp_8_string.png" },
-        { id: 10, name: "Jackson 7-String", brand: "Jackson", strings: "7", type: "Standard", image: "imgs/jackson_7_string.jpg" },
-        { id: 11, name: "Fender 12-String", brand: "Fender", strings: "12", type: "Standard", image: "imgs/fender_acoustic_12_string.jpg" },
-        { id: 12, name: "PRS SE McCarthy", brand: "PRS", strings: "6", type: "Standard", image: "imgs/prs_se_mcarthy.jpg" },
+        { id: 1, name: "ESP Eclipse", brand: "ESP", strings: "6", type: "Standard", image: "esp_eclipse.png" },
+        { id: 2, name: "Jackson Soloist", brand: "Jackson", strings: "7", type: "Standard", image: "jackson_soloist.jpg" },
+        { id: 3, name: "Fender Stratocaster", brand: "Fender", strings: "6", type: "Standard", image: "fender_strato.jpg" },
+        { id: 4, name: "Gibson Les Paul", brand: "Gibson", strings: "6", type: "Standard", image: "gibson_lespaul_studio.png" },
+        { id: 5, name: "ESP KH-2", brand: "ESP", strings: "6", type: "Signature", image: "esp_kh2.png" },
+        { id: 6, name: "Jackson Randy Rhoads X", brand: "Jackson", strings: "6", type: "Signature", image: "jackson_rr_x.jpg" },
+        { id: 7, name: "Fender Jim Root", brand: "Fender", strings: "6", type: "Signature", image: "fender_jim_root.jpg" },
+        { id: 8, name: "Gibson Tony Iommi SG", brand: "Gibson", strings: "6", type: "Signature", image: "gibson_tony_iommi_sg.jpg" },
+        { id: 9, name: "ESP 8-String", brand: "ESP", strings: "8", type: "Standard", image: "esp_8_string.png" },
+        { id: 10, name: "Jackson 7-String", brand: "Jackson", strings: "7", type: "Standard", image: "jackson_7_string.jpg" },
+        { id: 11, name: "Fender 12-String", brand: "Fender", strings: "12", type: "Standard", image: "fender_acoustic_12_string.jpg" },
+        { id: 12, name: "PRS SE McCarthy", brand: "PRS", strings: "6", type: "Standard", image: "prs_se_mcarthy.jpg" },
     ];
 
     function renderGuitars(guitarsToRender) {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             guitarCard.addEventListener('click', (e) => {
                 if (!e.target.closest('.favorite-btn')) {
-                    window.location.href = `productos/product-details.html?id=${guitar.id}`;
+                    window.location.href = `product-details.html?id=${guitar.id}`;
                 }
             });
             guitarGrid.appendChild(guitarCard);
