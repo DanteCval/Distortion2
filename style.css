@@ -4,7 +4,7 @@
 :root {
     --primary-color: #ff3e00;
     --secondary-color: #ff3300e0;
-    --text-color: white;
+    --text-color: #333;
     --background-color: #f4f4f4;
     --heading-font: 'Oswald', sans-serif;
     --body-font: 'Montserrat', sans-serif;
@@ -97,7 +97,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-color);
+    color: white;
 }
 
 .nav-links a:hover {
