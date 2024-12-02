@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const bassCard = document.createElement('div');
             bassCard.className = 'bass-card';
             bassCard.innerHTML = `
-                <img src="${bass.image[0]}" alt="${bass.name}">
+                <img src="${bass.image}" alt="${bass.name}">
                 <div class="bass-card-content">
                     <h3>${bass.name}</h3>
                     <p>Marca: ${bass.brand}</p>
@@ -59,11 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedStrings = Array.from(document.querySelectorAll('input[name="strings"]:checked')).map(input => input.value);
         const selectedTypes = Array.from(document.querySelectorAll('input[name="type"]:checked')).map(input => input.value);
 
-        const filteredBasses = basses.filter(bass => 
-            (selectedBrands.length === 0 || selectedBrands.includes(bass.specs[0].split(': ')[1].toLowerCase())) &&
-            (selectedStrings.length === 0 || selectedStrings.includes(bass.specs[3].split(': ')[1].split(' ')[0])) &&
-            (selectedTypes.length === 0 || bass.name.toLowerCase().includes(selectedTypes[0]))
-        );
+       const filteredBasses = basses.filter(bass => 
+    (selectedBrands.length === 0 || selectedBrands.includes(bass.brand.toLowerCase())) &&
+    (selectedStrings.length === 0 || selectedStrings.includes(bass.strings)) &&
+    (selectedTypes.length === 0 || selectedTypes.includes(bass.type.toLowerCase()))
+);
 
         renderBasses(filteredBasses);
     }
