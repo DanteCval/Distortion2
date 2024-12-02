@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (productButton) {
             productButton.addEventListener('click', () => {
-                window.location.href = '/productos/product-details.html?id=2'; // Cambia esta URL por la del producto específico
+                window.location.href = 'product-details.html?id=2'; // Cambia esta URL por la del producto específico
             });
         }
     });
