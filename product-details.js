@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const productHTML = `
             <div class="product-header">
                 <h1>${product.name}</h1>
-                <p class="price">$${product.price}</p>
+                
             </div>
             
             <div class="product-content">
