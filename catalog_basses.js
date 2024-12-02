@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const bassCard = document.createElement('div');
             bassCard.className = 'bass-card';
             bassCard.innerHTML = `
-                <img src="${bass.images[0]}" alt="${bass.name}">
+                <img src="${bass.image[0]}" alt="${bass.name}">
                 <div class="bass-card-content">
                     <h3>${bass.name}</h3>
                     <p>Precio: $${bass.price}</p>
