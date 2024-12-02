@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             bassCard.addEventListener('click', (e) => {
                 if (!e.target.closest('.favorite-btn')) {
-                    window.location.href = `productos/product-details.html?id=${bass.id}`;
+                    window.location.href = `product-details.html?id=${bass.id}`;
                 }
             });
             bassGrid.appendChild(bassCard);
