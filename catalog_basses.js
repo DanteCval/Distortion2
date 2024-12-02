@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const basses = [
-        { id: 1, name: "Fender Precision", brand: "Fender", strings: "4", type: "Standard", image: "fender_precision.png" },
-        { id: 2, name: "Music Man StingRay", brand: "MusicMan", strings: "5", type: "Standard", image: "musicman_stingray.png" },
-        { id: 3, name: "Ibanez SR500", brand: "Ibanez", strings: "4", type: "Standard", image: "ibanez_sr500.png" },
-        { id: 4, name: "Warwick Thumb", brand: "Warwick", strings: "5", type: "Signature", image: "warwick_thumb.png" },
+        { id: 1, name: "Fender Precision", brand: "Fender", strings: "4", type: "Standard", image: "fender_precision_bass.png" },
+        { id: 2, name: "Music Man StingRay", brand: "MusicMan", strings: "5", type: "Standard", image: "musicman_stingray_5.png" },
+        { id: 3, name: "Ibanez SR500", brand: "Ibanez", strings: "4", type: "Standard", image: "ibanez_sr_premium.png" },
+        { id: 4, name: "Warwick Corvette", brand: "Warwick", strings: "5", type: "Signature", image: "warwick_corvette.png" },
     ];
 
     function renderBasses(bassesToRender) {
