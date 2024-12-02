@@ -52,6 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.closest('.favorite-btn')) {
             e.target.closest('.favorite-btn').classList.toggle('active');
         }
+        if (bassesToRender.length === 0) {
+    bassGrid.innerHTML = '<p>No se encontraron bajos con los filtros seleccionados.</p>';
+        }
+    
     });
 
     function applyFilters() {
