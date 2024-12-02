@@ -13,9 +13,9 @@ const productData = {
             "Controles: 1 x Volumen, 2 x Tono, Selector de 5 posiciones"
         ],
         images: [
-            "guitarras/ESP_eclipse1.png",
-            "guitarras/ESP_eclipse2.png",
-            "guitarras/ESP_eclipse3.png",
+            "ESP_eclipse1.png",
+            "ESP_eclipse2.png",
+            "ESP_eclipse3.png",
         ]
     },
 
@@ -33,9 +33,9 @@ const productData = {
             "Controles: 1 x Volumen, 2 x Tono, Selector de 5 posiciones"
         ],
         images: [
-            "guitarras/jackson_soloist1.jpg",
-            "guitarras/jackson_soloist2.jpg",
-            "guitarras/jackson_soloist3.jpg",
+            "jackson_soloist1.jpg",
+            "jackson_soloist2.jpg",
+            "jackson_soloist3.jpg",
         ]
     },
 
