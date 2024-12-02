@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         navButtons.classList.toggle('active');
     });
 
+    const basses = [
+        { id: 1, name: "Eaa", brand: "ESP", strings: "4", type: "Standard", image: "fender_precision.png" },
+        
+    ];
+
+
     // Filtrar solo los bajos de productData
     const basses = Object.values(productData).filter(product => product.type === 'bass');
 
